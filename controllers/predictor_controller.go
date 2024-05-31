@@ -380,6 +380,14 @@ func extractModelFields(predictor *api.Predictor) (path string, schemaPath, stor
 
 // Returns the model-mesh model name corresponding to a particular Predictor and sourceId
 func concreteModelName(predictor *api.Predictor, sourceId string) string {
+	fmt.Printf("--------")
+	fmt.Printf("--------")
+	fmt.Printf("--------")
+	fmt.Printf("--------")
+	fmt.Printf("--------")
+	fmt.Printf("--------")
+	fmt.Printf("--------")
+	fmt.Printf("Predictor details: %+v\n", predictor)
 	return fmt.Sprintf("%s__%s-%s", predictor.Name, sourceId, Hash(&predictor.Spec))
 }
 
